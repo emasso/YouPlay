@@ -92,11 +92,12 @@ class PlayerView: UIBaseView {
     
     /// Restart the class variables.
     func stopPlayer() {
+        player?.replaceCurrentItem(with: nil)
         player = nil
         playerLayer = nil
         isPlaying = false
         isEnded = false
-        
+        PlayerTracker.shared.trackPlayerEvent(event: .stop)
     }
     
     /// Removes the observers.
