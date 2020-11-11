@@ -1,0 +1,6 @@
+framework module Pods_YouPlayer {
+  umbrella header "Pods-YouPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

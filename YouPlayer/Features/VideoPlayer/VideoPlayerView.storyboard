@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video Player View Controller-->
+        <scene sceneID="JS1-zB-GZs">
+            <objects>
+                <viewController storyboardIdentifier="VideoPlayerViewId" id="2gY-mM-a50" customClass="VideoPlayerViewController" customModule="YouPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uSB-rM-Q23">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaq-tR-fUw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHC-6i-a2Y" customClass="PlayerView" customModule="YouPlayer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="292.5" width="414" height="233"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sHC-6i-a2Y" secondAttribute="height" multiplier="16:9" priority="750" id="8LR-ZL-5Q7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="sHC-6i-a2Y" firstAttribute="leading" secondItem="yaq-tR-fUw" secondAttribute="leading" id="8dn-jG-Wt0"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sHC-6i-a2Y" secondAttribute="bottom" id="BVq-HS-6jL"/>
+                                    <constraint firstItem="sHC-6i-a2Y" firstAttribute="top" relation="greaterThanOrEqual" secondItem="yaq-tR-fUw" secondAttribute="top" id="NpM-pH-9K9"/>
+                                    <constraint firstAttribute="trailing" secondItem="sHC-6i-a2Y" secondAttribute="trailing" id="ipf-lu-hCG"/>
+                                    <constraint firstItem="sHC-6i-a2Y" firstAttribute="centerY" secondItem="yaq-tR-fUw" secondAttribute="centerY" id="u7c-DV-Ekf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LVe-gc-KHA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yaq-tR-fUw" firstAttribute="top" secondItem="LVe-gc-KHA" secondAttribute="top" id="7No-cU-r4z"/>
+                            <constraint firstItem="LVe-gc-KHA" firstAttribute="trailing" secondItem="yaq-tR-fUw" secondAttribute="trailing" id="lap-YG-7hL"/>
+                            <constraint firstItem="yaq-tR-fUw" firstAttribute="leading" secondItem="LVe-gc-KHA" secondAttribute="leading" id="lrh-mZ-gax"/>
+                            <constraint firstItem="LVe-gc-KHA" firstAttribute="bottom" secondItem="yaq-tR-fUw" secondAttribute="bottom" id="s9O-zH-60n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerView" destination="sHC-6i-a2Y" id="9fO-aR-DrB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jKj-Zr-r7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

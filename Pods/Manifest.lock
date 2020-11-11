@@ -1,0 +1,22 @@
+PODS:
+  - PlayerTracker (1.0.0)
+
+DEPENDENCIES:
+  - PlayerTracker (from `https://github.com/emasso/PlayerTracker.git`, tag `1.0.0`)
+
+EXTERNAL SOURCES:
+  PlayerTracker:
+    :git: https://github.com/emasso/PlayerTracker.git
+    :tag: 1.0.0
+
+CHECKOUT OPTIONS:
+  PlayerTracker:
+    :git: https://github.com/emasso/PlayerTracker.git
+    :tag: 1.0.0
+
+SPEC CHECKSUMS:
+  PlayerTracker: 18e6e71f03b5a90a3ea7b6b2a6b5280e84eef858
+
+PODFILE CHECKSUM: 5ccc2471d80e796d54be51d4d2b0df00b33a23a7
+
+COCOAPODS: 1.10.0

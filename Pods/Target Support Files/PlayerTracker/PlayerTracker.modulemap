@@ -1,0 +1,6 @@
+framework module PlayerTracker {
+  umbrella header "PlayerTracker-umbrella.h"
+
+  export *
+  module * { export * }
+}
